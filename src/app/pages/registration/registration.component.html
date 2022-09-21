@@ -1,60 +1,104 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-5">
-            <img src="../../../assets/img/registration-form.png" height="5%" width="100%">
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="signup.component.css">
+   </head>
+<body>
+    
+  <div class="wrapper">
+    <h2>Registration</h2>
+    <form action="#" #f="ngForm">
+      <div class="input-box">
+        <label class="">Staff ID</label>
+        <input class="form-control"  #username="ngModel"
+        type="text"
+        minlength="9"
+        name="username"
+        [(ngModel)]="regform.username"
+        required>
+        <div class="alert alert-danger" *ngIf="username.invalid && (username.dirty || username.touched)">
+       <div *ngIf="username.errors?.['required']">Staff ID required</div>
+       <div *ngIf="username.errors?.['minlength']">Invalid Length</div>
         </div>
-        <div class="col-md-4 mt-3 mb-2">
-            <h1 class="text-primary text-center"><b>Registration</b></h1>
-
-            <form action="" class="mt-5 p-5">
-               <!--<h4 class="text-primary mb-3">Login </h4>--> 
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="" placeholder="Staff ID" name="Staff ID" >
-                 
-                </div>
-                <br>
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="First Names" name="First Names">
-                    
-                  </div>
-                  <br>
-                
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Surname" name="Surname">
-                    
-                  </div>
-                  <br>
-                  
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Email" name="Email">
-                    
-                  </div>
-                  <br>
-                  
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Role" name="Role">
-                    
-                  </div>
-                  <br>
-                  
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Reg Description" name="Reg Description">
-                    
-                  </div>
-                  <br>
-                  <div class="d-grid gap-4 col-6 mx-auto">
-                    <button class="btn btn-primary" type="button">Register</button>
-                  </div><br><br>
-                  <div class="col-md-4 mt-3 mb-2">
-                    <h1 class="text-primary text-center"><b></b></h1>
-                  </div>
-            </form>
-
-            <div class="col-2 col-md-6">
-              <img src="../../../assets/img/logo2.png"  alt="Reload images">
-          </div>
+      </div><!--The end-->
+      <br>
+      <div class="input-box">
+        <label class="">First Names</label>
+        <input class="form-control"  #firstnames="ngModel"
+        type="text"
+        minlength="5"
+        name="firstnames"
+        [(ngModel)]="regform.firstnames"
+        required>
+        <div class="alert alert-danger" *ngIf="firstnames.invalid && (firstnames.dirty || firstnames.touched)">
+       <div *ngIf="firstnames.errors?.['required']">Staff Names required</div>
+       <div *ngIf="firstnames.errors?.['minlength']">Invalid names length</div>
         </div>
-    </div>
-</div>
+      </div><!--The end-->
+      <br>
 
+      <div class="input-box">
+        <label class="">Surname</label>
+        <input class="form-control"  #surname="ngModel"
+        type="text"
+        minlength="5"
+        name="surname"
+        [(ngModel)]="regform.surname"
+        required>
+        <div class="alert alert-danger" *ngIf="surname.invalid && (surname.dirty ||surname.touched)">
+       <div *ngIf="firstnames.errors?.['required']">Staff surname required</div>
+       <div *ngIf="firstnames.errors?.['minlength']">Invalid surname length</div>
+        </div>
+      </div><!--The end-->
+      <br>
+      <div class="input-box">
+        <label class="">Email</label>
+        <input class="form-control"  #Email="ngModel"
+        type="text"
+        minlength="5"
+        name="Email"
+        [(ngModel)]="regform.email"
+        required>
+        <div class="alert alert-danger" *ngIf="Email.invalid && (Email.dirty ||Email.touched)">
+       <div *ngIf="firstnames.errors?.['required']">Staff email required</div>
+       <div *ngIf="firstnames.errors?.['minlength']">Invalid email length</div>
+        </div>
+      </div><!--The end-->
+      <br>
 
+      <div class="input-box">
+         <label class="">Role</label>
+        <input class="form-control"  #role="ngModel"
+        type="text"
+        minlength="5"
+        name="Role"
+        [(ngModel)]="regform.role"
+        required>
+        <div class="alert alert-danger" *ngIf="role.invalid && (role.dirty ||role.touched)">
+       <div *ngIf="firstnames.errors?.['required']">Staff role required</div>
+       <div *ngIf="firstnames.errors?.['minlength']">Invalid role length</div>
+        </div>
+      </div> <!--=The end-->      
+      <br>
+      <div class="policy">
+        <input type="checkbox">
+        <h3>I accept all terms & condition</h3>
+      </div>
+      <div class="input-box button">
+  
+       
+        <input routerLink="/login" [disabled]="!f.valid" type="Submit" class="btn btn-login float-right" value="Register Now">
+      </div>
+      <div class="text">
+       <!----<h3>Already have an account? <a href="#">Login now</a></h3>-->
+            <h3>Technical Services</h3>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
