@@ -5,6 +5,8 @@ import { FeedbackComponent } from './pages/feedback/feedback.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegistrationComponent } from './pages/registration/registration.component';
+import { ArtisanlistComponent } from './pages/artisanlist/artisanlist.component';
+import { StafflistComponent } from './pages/stafflist/stafflist.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -12,7 +14,10 @@ const routes: Routes = [
   {path: 'dashboard', component: DashboardComponent},
   {path: 'feedback', component:FeedbackComponent},
   {path: 'registration', component: RegistrationComponent},
-];
+  {path: 'stafflist',component: StafflistComponent},
+  {path: 'artisanlist', component: ArtisanlistComponent},
+]
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

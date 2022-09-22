@@ -1,0 +1,76 @@
+
+    <nav class="navbar narbar-light bg-primary">
+      <div class="container-fluid">
+          <h1 style="color: whitesmoke;">Staff Members</h1>
+          <input class="form-control" style="margin-left: 70%;" type="text"
+          name="name" [(ngModel)]="name" (ngModelChange)="Search()"
+          placeholder="search by name">
+      </div>
+  </nav>
+  <div class="container mob-table">
+  <app-nav></app-nav>
+  <div class="table bg-primary">
+    <table class="table mt-4">
+      <thead>
+          <tr style="color: whitesmoke;">
+              <th scope="col">Number</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Mobile</th>
+              <th scope="col">Actions</th>
+          </tr>
+      </thead>
+      <tbody style="color: antiquewhite;">
+          <tr *ngFor="let staff of staff">
+              <td>{{staff.number}}</td>
+              <td>{{staff.name}}</td>
+              <td>{{staff.email}}</td>
+              <td>{{staff.mobile}}</td>
+              <!-- ADD DELETE AND EDIT BUTTONS -->
+              <td>
+                  <button class="btn btn-danger" (click)="deleteRow(staff.number)">DELETE</button>
+                  &nbsp;&nbsp;    <!--spacing-->
+                  <button class="btn btn-info" (click)="update(staff.number)">EDIT</button>
+              </td>
+          </tr>
+      </tbody>
+      
+    </table>
+  </div>
+  
+</div>
+
+
+<!-- Modal -->
+  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Staff Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Name and Surname</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="name and surname">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">email</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="email address">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Mobile</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="phone number">
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+

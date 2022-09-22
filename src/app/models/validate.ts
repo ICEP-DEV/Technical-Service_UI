@@ -11,4 +11,8 @@ export class Validate {
         public etc: Date
         ) {}
         
+    id!: string;
+    sName!: string;
+    emailAddress!: string;
+    phoneNumber!: string;
 }
