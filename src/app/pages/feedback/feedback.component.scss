@@ -1,0 +1,56 @@
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+
+/* STYLING THE RADIO BUTTON */
+mat-radio-group mat-radion-button{
+    margin-left: 5px;
+}
+
+.feedback{
+    background: #023177
+}
+
+feedback-block{
+    background: #0467fd;  /* fallback for old browsers */
+    float:left;
+    width:100%;
+    padding : 50px 0;
+}
+
+.banner-sec{
+    background:url(https://static.pexels.com/photos/33972/pexels-photo.jpg);
+    background-size:cover; 
+    min-height:500px; 
+    border-radius: 0 10px 10px 0; 
+    padding:0;
+}
+
+.container{
+    background:rgb(0, 135, 245); 
+    border-radius: 10px; box-shadow:15px 20px 0px rgba(2, 91, 255, 0.938);
+}
+
+.carousel-inner{
+    border-radius:0 10px 10px 0;
+}
+
+.carousel-caption{text-align:left; left:5%;}
+.login-sec{padding: 50px 30px; position:relative;}
+.login-sec .copy-text{position:absolute; width:80%; bottom:20px; font-size:13px; text-align:center;}
+.login-sec .copy-text i{color:#2789fa;}
+.login-sec .copy-text a{color:#3552f7;}
+.login-sec h2{margin-bottom:30px; font-weight:800; font-size:30px; color: #3823f7;}
+.login-sec h2:after{content:" "; width:100px; height:5px; background:#16278b; display:block; margin-top:20px; border-radius:3px; margin-left:auto;margin-right:auto}
+.btn-login{background: #152db3; color:rgb(163, 162, 233); font-weight:600;}
+.banner-text{width:70%; position:absolute; bottom:40px; padding-left:20px;}
+.banner-text h2{color:rgb(163, 161, 199); font-weight:600;}
+.banner-text h2:after{content:" "; width:100px; height:5px; background:rgb(204, 200, 252); display:block; margin-top:20px; border-radius:3px;}
+.banner-text p{color:rgb(176, 174, 202);}
+
+
+/* p {
+    font-family: Lato;
+  } */
+
+
+  

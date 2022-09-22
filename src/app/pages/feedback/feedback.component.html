@@ -1,0 +1,140 @@
+<section class="feedback">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 login-sec">
+				<h2 class="text-center">Feedback</h2>
+				<form class="feedback-block" #f="ngForm"> 
+				<!-- <mat-grid-list cols="2" rowHeight="300px"> 
+				{{validateModel | json}}  -->
+
+
+				<div class="form">
+					<div class="form-group">
+						<label class="">Staff Name:</label>
+						<input class="form-control"  #staffName="ngModel"
+						type="text"
+						minlength="5"
+						name="staffName"
+						[(ngModel)]="regForm.staffName"
+						placeholder="Staff Name"
+						required>
+						<div class="alert alert-danger" *ngIf="staffName.invalid && (staffName.dirty || staffName.touched)">
+							<div *ngIf="staffName.errors?.['required']">Name required</div>
+							<div *ngIf="staffName.errors?.['minlength']">Invalid minLength</div>
+						  </div>
+					</div>
+					
+					<div class="form-group">
+						<label class="">Admin Name:</label>
+						<input class="form-control" #adminName="ngModel"
+						type="text"
+						minlength="5"
+						name="adminName"
+						[(ngModel)]="regForm.adminName"
+						placeholder="Admin Name"
+						required>
+						<div class="alert alert-danger" *ngIf="adminName.invalid && (adminName.dirty || adminName.touched)">
+							<div *ngIf="adminName.errors?.['required']">Name required</div>
+							<div *ngIf="adminName.errors?.['minlength']">Invalid minLength</div>
+						  </div>
+					</div>
+
+					<div class="form-group">
+						<label class="">Office:</label>
+						<input class="form-control" #office="ngModel"
+						type="text"
+						minlength="5"
+						name="office"
+						[(ngModel)]="regForm.office"
+						placeholder="Office"
+						required>
+						<div class="alert alert-danger" *ngIf="office.invalid && (office.dirty || office.touched)">
+							<div *ngIf="office.errors?.['required']">Name required</div>
+							<div *ngIf="office.errors?.['minlength']">Invalid minLength</div>
+						  </div>
+					</div>
+
+					<div class="form-group">
+						<label class="">Category</label>
+						<select class="form-control" name="category" [(ngModel)]="validateModel.category">
+							<option>Technical</option>
+							<option>Electrical</option>
+							<option>Infrastructure</option>
+						</select>
+					</div>
+
+                    <div class="form-group">
+						<label class="">Artisan</label>
+						<select class="form-control" name="artisan" [(ngModel)]="validateModel.artisan">
+							<option>Mpofu B</option>
+							<option>Ngoma R</option>
+							<option>Mabena Z</option>
+						</select>
+					</div>
+
+					<!-- date
+					<input matInput [matDatepicker]="picker">
+  					<mat-hint>MM/DD/YYYY</mat-hint> -->
+					  <!-- <input formControlName="reqDate" matInput [matDatepicker]="picker" placeholder="Request Date">
+					  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+					  <mat-datepicker #picker></mat-datepicker>	calender -->
+
+					  <div class="form-group">
+						<label class="">Request Date:</label>
+						<input class="form-control" #reqDate="ngModel"
+						type="date"
+						minlength="5"
+						name="date"
+						[(ngModel)]="regForm.reqDate"
+						placeholder="Request Date"
+						required>
+						<div class="alert alert-danger" *ngIf="reqDate.invalid && (reqDate.dirty || reqDate.touched)">
+							<div *ngIf="reqDate.errors?.['required']">Name required</div>
+							<div *ngIf="reqDate.errors?.['minlength']">Invalid minLength</div>
+						  </div>
+					</div>
+
+					<div class="form-group">
+						<label class="">ETC:</label>
+						<input class="form-control" #etc="ngModel"
+						type="date"
+						minlength="5"
+						name="date"
+						[(ngModel)]="regForm.etc"
+						placeholder="Request Date"
+						required>
+						<div class="alert alert-danger" *ngIf="etc.invalid && (etc.dirty || etc.touched)">
+							<div *ngIf="etc.errors?.['required']">Name required</div>
+							<div *ngIf="etc.errors?.['minlength']">Invalid minLength</div>
+						  </div>
+					</div>
+
+					<div class="form-group">
+						<label class="text-uppercase">Message</label>
+						<textarea class="form-control" formControlName="message" rows="3"></textarea>
+					</div>
+					<button [disabled]="!f.valid" type="submit" class="btn btn-login float-right">Submit</button>
+				</div>
+				<!-- </mat-grid-list> -->
+				</form>
+			</div>
+
+			<!-- FOR THE PICTURE -->
+			<div class="col-md-8 banner-sec">
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner" role="listbox">
+						<div class="carousel-item active">
+							<div class="carousel-caption d-none d-md-block">
+								<div class="banner-text">
+									<h2>This is Heaven</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+										labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
