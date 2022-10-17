@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-    <link rel="stylesheet" href="signup.component.css">
+    <!-- <link rel="stylesheet" href="signup.component.css"> -->
    </head>
 <body>
-    
+  <app-dashboard></app-dashboard>
   <div class="wrapper">
     <h2>Registration</h2>
     <form action="#" #f="ngForm">
@@ -91,7 +91,7 @@
       <div class="input-box button">
   
        
-        <input routerLink="/login" [disabled]="!f.valid" type="Submit" class="btn btn-login float-right" value="Register Now">
+        <input routerLink="/dashboard" [disabled]="!f.valid" type="Submit" class="btn btn-login float-right" value="Register Now">
       </div>
       <div class="text">
        <!----<h3>Already have an account? <a href="#">Login now</a></h3>-->
