@@ -11,7 +11,7 @@ body {
     cursor: pointer;
 }
 .nav-link {
-    margin-right: 10em !important;
+    margin-right: 4em !important;
     left: 50px;
 }
 .nav-link:hover {
@@ -34,10 +34,9 @@ img {
   }
 
   body{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background: -webkit-linear-gradient(right, #e61313e9, #fcff50cd, #1900ff, #026bff);
-   
   }
 .my-3{
     text-align: center;
@@ -76,7 +75,7 @@ transition: all 1s;
 }
 .btn {
 border: 3px solid red;
-color: rgb(255, 255, 255);
+color: rgb(245, 246, 255);
 }
 .btn:hover {
 color: #fff;
@@ -100,3 +99,9 @@ background: rgb(0, 34, 255);
 width: 100%;
 }
  
+.full{
+    height: 100%;
+    width: 100%;
+    background: -webkit-linear-gradient(right, #e61313e9, #fcff50cd, #1900ff, #026bff);
+   
+}
