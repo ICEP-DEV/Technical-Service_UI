@@ -17,6 +17,7 @@ import { TechnicianComponent } from './pages/technician/technician.component';
 import { StatusComponent } from './pages/status/status.component';
 import { StaffDashboardComponent } from './pages/staff-dashboard/staff-dashboard.component';
 import { StaffrequestComponent } from './pages/staffrequest/staffrequest.component';
+import { ArtfeedbackComponent } from './pages/artfeedback/artfeedback.component';
 
 
 
@@ -38,8 +39,8 @@ import { StaffrequestComponent } from './pages/staffrequest/staffrequest.compone
     StatusComponent,
     StaffDashboardComponent,
     StaffrequestComponent,
- 
-
+    ArtfeedbackComponent,
+  
    
   ],
   imports: [

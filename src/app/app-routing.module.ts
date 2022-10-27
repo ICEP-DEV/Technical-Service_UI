@@ -12,6 +12,8 @@ import { TechnicianComponent } from './pages/technician/technician.component';
 import { StatusComponent } from './pages/status/status.component';
 import { StaffDashboardComponent } from './pages/staff-dashboard/staff-dashboard.component';
 import { StaffrequestComponent } from './pages/staffrequest/staffrequest.component';
+import { ArtfeedbackComponent } from './pages/artfeedback/artfeedback.component';
+
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -25,7 +27,8 @@ const routes: Routes = [
   {path: 'technician', component: TechnicianComponent},
   {path: 'status', component: StatusComponent},
   {path: 'staff-dashboard', component: StaffDashboardComponent},
-  {path: 'staff-request', component: StaffrequestComponent}
+  {path: 'staff-request', component: StaffrequestComponent},
+  {path: 'artfeedback', component: ArtfeedbackComponent}
 
 ]
 
