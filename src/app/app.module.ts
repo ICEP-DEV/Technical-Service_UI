@@ -18,6 +18,8 @@ import { StatusComponent } from './pages/status/status.component';
 import { StaffDashboardComponent } from './pages/staff-dashboard/staff-dashboard.component';
 import { StaffrequestComponent } from './pages/staffrequest/staffrequest.component';
 import { ArtfeedbackComponent } from './pages/artfeedback/artfeedback.component';
+import { AdminreportComponent } from './pages/adminreport/adminreport.component';
+import { ArtreportComponent } from './pages/artreport/artreport.component';
 
 
 
@@ -40,6 +42,8 @@ import { ArtfeedbackComponent } from './pages/artfeedback/artfeedback.component'
     StaffDashboardComponent,
     StaffrequestComponent,
     ArtfeedbackComponent,
+    AdminreportComponent,
+    ArtreportComponent,
   
    
   ],

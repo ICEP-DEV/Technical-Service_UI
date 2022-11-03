@@ -13,6 +13,8 @@ import { StatusComponent } from './pages/status/status.component';
 import { StaffDashboardComponent } from './pages/staff-dashboard/staff-dashboard.component';
 import { StaffrequestComponent } from './pages/staffrequest/staffrequest.component';
 import { ArtfeedbackComponent } from './pages/artfeedback/artfeedback.component';
+import { ArtreportComponent } from './pages/artreport/artreport.component';
+import { AdminreportComponent } from './pages/adminreport/adminreport.component';
 
 
 const routes: Routes = [
@@ -28,8 +30,9 @@ const routes: Routes = [
   {path: 'status', component: StatusComponent},
   {path: 'staff-dashboard', component: StaffDashboardComponent},
   {path: 'staff-request', component: StaffrequestComponent},
-  {path: 'artfeedback', component: ArtfeedbackComponent}
-
+  {path: 'artfeedback', component: ArtfeedbackComponent},
+  {path: 'artreport', component: ArtreportComponent},
+  {path: 'adminreport', component: AdminreportComponent},
 ]
 
 
