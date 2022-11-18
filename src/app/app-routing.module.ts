@@ -16,7 +16,7 @@ import { ArtfeedbackComponent } from './pages/artfeedback/artfeedback.component'
 import { ArtreportComponent } from './pages/artreport/artreport.component';
 import { AdminreportComponent } from './pages/adminreportdetailed/adminreport.component';
 import { AdminRepoLinksComponent } from './pages/admin-repo-links/admin-repo-links.component';
-import { GeneralreportComponent } from './pages/generalreport/generalreport.component';
+import { GeneralreportComponent } from './pages/generalreportadmin/generalreport.component';
 
 
 const routes: Routes = [

@@ -11,5 +11,7 @@ export class ArtreportComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  printThisPage(){
+    window.print();
+  }
 }
