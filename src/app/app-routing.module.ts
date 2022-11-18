@@ -14,8 +14,9 @@ import { StaffDashboardComponent } from './pages/staff-dashboard/staff-dashboard
 import { StaffrequestComponent } from './pages/staffrequest/staffrequest.component';
 import { ArtfeedbackComponent } from './pages/artfeedback/artfeedback.component';
 import { ArtreportComponent } from './pages/artreport/artreport.component';
-import { AdminreportComponent } from './pages/adminreport/adminreport.component';
+import { AdminreportComponent } from './pages/adminreportdetailed/adminreport.component';
 import { AdminRepoLinksComponent } from './pages/admin-repo-links/admin-repo-links.component';
+import { GeneralreportComponent } from './pages/generalreport/generalreport.component';
 
 
 const routes: Routes = [
@@ -34,7 +35,8 @@ const routes: Routes = [
   {path: 'artfeedback', component: ArtfeedbackComponent},
   {path: 'artreport', component: ArtreportComponent},
   {path: 'adminreport', component: AdminreportComponent},
-  {path : 'admin-repo-links', component: AdminRepoLinksComponent}
+  {path : 'admin-repo-links', component: AdminRepoLinksComponent},
+  {path: 'generalreport', component: GeneralreportComponent}
 ]
 
 

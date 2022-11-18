@@ -18,9 +18,10 @@ import { StatusComponent } from './pages/status/status.component';
 import { StaffDashboardComponent } from './pages/staff-dashboard/staff-dashboard.component';
 import { StaffrequestComponent } from './pages/staffrequest/staffrequest.component';
 import { ArtfeedbackComponent } from './pages/artfeedback/artfeedback.component';
-import { AdminreportComponent } from './pages/adminreport/adminreport.component';
+import { AdminreportComponent } from './pages/adminreportdetailed/adminreport.component';
 import { ArtreportComponent } from './pages/artreport/artreport.component';
 import { AdminRepoLinksComponent } from './pages/admin-repo-links/admin-repo-links.component';
+import { GeneralreportComponent } from './pages/generalreport/generalreport.component';
 
 
 
@@ -46,8 +47,9 @@ import { AdminRepoLinksComponent } from './pages/admin-repo-links/admin-repo-lin
     AdminreportComponent,
     ArtreportComponent,
     AdminRepoLinksComponent,
-  
-   
+    GeneralreportComponent,
+
+
   ],
   imports: [
     BrowserModule,
