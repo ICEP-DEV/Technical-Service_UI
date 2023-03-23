@@ -1,106 +1,156 @@
 <!DOCTYPE html>
-<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
-    <!-- <link rel="stylesheet" href="dashboard.component.css"> -->
-    <!-- Boxicons CDN Link -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Feedback</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+
+
+  <!-- Template Main CSS File -->
+  <link href="./dashboard.component.html" rel="stylesheet">
+
+</head>
 <body>
-  <div class="wrapper">  <!--For screen resolution, yet its not working-->
-    <div class="sidebar">
-    <div class="logo-details">
-      <i class="bx bxs-calendar-minus"></i>
-      <span class="logo_name">TechServices</span>
-    </div>
-    <i class='bx bx-menu' id="btn" ></i>
-    <ul class="nav-list">
-      <li>
-          <i class='bx bx-search' ></i>
-         <input type="text" placeholder="Search...">
-         
-      </li>
-      <li>
-        <a href="">
-          <i class='bx bx-grid-alt'></i>
-          <span class="links_name">Dashboard</span>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">Administration</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <!--<div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>--
+    </div> End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+    <!---  <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
         </a>
-      </li>
-      <li>
-       <a href="/registration">
-         <i class='bx bx-user' ></i>
-         <span class="links_name">Register</span>
-       </a>
-     </li>
-     <li>
-      <a routerLink="/feedback">
-        <i class='bx bx-add-to-queue'></i>
-        <span class="links_name">Job Card</span>
-      </a>
-    </li>
-     <li>
-       <a href="#">
-         <i class='bx bx-chat' ></i>
-         <span class="links_name">Messages</span>
-       </a>
-     </li>
-     <li>
-      
-       <a href="#">
-         <i class='bx bx-pie-chart-alt-2' ></i>
-         <span class="links_name">Generate Report</span>
-       </a>
+      </li>End Dashboard Nav -->
 
-     </li>
-     <!-- *************************************************** -->
-     <li>
-      <a routerLink="/stafflist">
-        <i class='bx bx-user'></i>
-        <span class="links_name">View Staff Members</span>
-      </a>
-    </li>
-    <li>
-      <a routerLink="/artisanlist">
-        <i class='bx bx-user'></i>
-        <span class="links_name">View Artisan</span>
-      </a>
-    </li>
-     <!-- *************************************************** -->
-     <li>
-       <a href="#">
-         <i class='bx bx-folder' ></i>
-         <span class="links_name">Print Report</span>
-       </a>
-     </li>
-     <li>
-      
-       <a href="#">
-         <i class='bx bx-cog' ></i>
-         <span class="links_name">Settings</span>
-       </a>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/registration">
+          <i class="bi bi-grid"></i>
+          <span>Registration</span>
+        </a>
+      </li><!-- End Registration Nav-->
 
-     </li>
-     <br>
-     <br>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/request">
+          <i class="bi bi-grid-fill"></i>
+          <span>Job Requests</span>
+        </a>
+      </li><!-- End Job Card Nav -->
 
-     <li>
-      <a href="#">
-        <i class='bx bx-log-out' ></i>
-        <span class="links_name">Log Out</span>
-      </a>
-    </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="artisanlist">
+          <i class="bi bi-grid"></i>
+          <span>View Artisan</span>
+        </a>
+      </li><!-- End Artisan Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/stafflist">
+          <i class="bi bi-grid"></i>
+          <span>View Staff Members</span>
+        </a>
+      </li><!-- End Staff Members Nav -->
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/admin-repo-links">
+          <i class="bi bi-grid"></i>
+          <span>Print Report</span>
+        </a>
+      </li><!-- End Staff Members Nav -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/login">
+            <i class="bi bi-grid"></i>
+            <span>Log Out</span>
+          </a>
     </ul>
-  </div>
 
-</div>
-<!--Displaying honme section on the admin dashboard-->
 
-   
+  <!--sidebar-->
+  </aside><!-- End Print Report Nav-->
 
 
 
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.min.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -11,9 +11,7 @@ describe('ArtisanlistComponent', () => {
       declarations: [ ArtisanlistComponent ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(ArtisanlistComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
